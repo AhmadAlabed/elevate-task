@@ -1,4 +1,4 @@
-import React, { SelectHTMLAttributes } from "react";
+import { SelectHTMLAttributes } from "react";
 interface ISelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   id: string;
   name: string;

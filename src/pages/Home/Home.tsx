@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from "react";
+import { ChangeEvent, useContext, useEffect, useState } from "react";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { getProducts } from "../../services/products";
 import { type IProduct } from "../../types";
@@ -6,6 +6,10 @@ import Select from "../../components/ui/Select/Select";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import { LoadingContext } from "../../contexts/LoadingContext";
 import { toast } from "react-toastify";
+interface ICustomError extends Error {
+  message: string;
+}
+
 interface IControls {
   sort: "asc" | "desc";
   limit: number;
@@ -26,7 +30,8 @@ const Home = () => {
       setIsLoading(false);
     } catch (error) {
       setIsLoading(false);
-      toast.error(error?.message);
+      const customError = error as ICustomError;
+      toast.error(customError.message);
     }
   };
   // ---------Event Handler---------

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { starActive, starDisabled } from "../../assets/svg";
 import { Link, useParams } from "react-router-dom";
 import { type IProduct } from "../../types";
@@ -7,6 +7,9 @@ import Button from "../../components/ui/Button/Button";
 import { LoadingContext } from "../../contexts/LoadingContext";
 import { toast } from "react-toastify";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
+interface ICustomError extends Error {
+  message: string;
+}
 const ProductDetails = () => {
   const { setIsLoading } = useContext(LoadingContext);
   const { id } = useParams();
@@ -22,7 +25,8 @@ const ProductDetails = () => {
       setIsLoading(false);
     } catch (error) {
       setIsLoading(false);
-      toast.error(error?.message);
+      const customError = error as ICustomError;
+      toast.error(customError.message);
     }
   };
   // -------------Render-------------
