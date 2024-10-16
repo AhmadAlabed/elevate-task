@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Spinner from "./components/Spinner/Spinner";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { LoadingContext } from "./contexts/LoadingContext";
 import { ToastContainer, Zoom } from "react-toastify";
 
