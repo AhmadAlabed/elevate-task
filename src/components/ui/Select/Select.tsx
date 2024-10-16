@@ -18,7 +18,7 @@ const Select = (props: ISelectProps) => {
         <select
           name={name}
           id={id}
-          className="border-none outline-none"
+          className="border-none outline-none bg-transparent"
           {...rest}
         >
           {options.map((option, index) => {

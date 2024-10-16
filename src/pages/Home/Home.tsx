@@ -74,7 +74,6 @@ const Home = () => {
     return <ProductCard key={product.id} product={product} />;
   });
   useEffect(() => {
-    toast.success("Welcome to our website! We're glad to have you here.");
     window.scrollTo(0, 0);
   }, []);
 

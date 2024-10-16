@@ -1,4 +1,9 @@
+import { toast } from "react-toastify";
+
 const Header = () => {
+  const clickHandler = () => {
+    toast.info("This feature is not available yet 🙏");
+  };
   return (
     <>
       <header className="bg-white">
@@ -6,19 +11,19 @@ const Header = () => {
           <div className="flex flex-1 items-center justify-end ">
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
-                <a
+                <button
                   className="block  bg-gray-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-gray-700"
-                  href="#"
+                  onClick={clickHandler}
                 >
                   Login
-                </a>
+                </button>
 
-                <a
+                <button
                   className="hidden  bg-gray-100 px-5 py-2.5 text-sm font-medium text-gray-600 transition hover:text-gray-600/75 sm:block"
-                  href="#"
+                  onClick={clickHandler}
                 >
                   Register
-                </a>
+                </button>
               </div>
 
               <button className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">
