@@ -21,7 +21,6 @@ const ProductDetails = () => {
       setIsLoading(true);
       const response = await getOneProduct(id);
       setProduct(response.data);
-      console.log(response);
       setIsLoading(false);
     } catch (error) {
       setIsLoading(false);
