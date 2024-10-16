@@ -10,7 +10,7 @@ const Select = (props: ISelectProps) => {
   return (
     <>
       <div
-        className={`border border-spacing-1 px-3 py-1 flex gap-1 hover:opacity-80 text-lg text-gray-800 `}
+        className={`border border-spacing-1 px-5 py-2.5 flex gap-1 hover:opacity-80 text-sm font-medium text-skin-base `}
       >
         <label htmlFor={id} className="">
           {label}
@@ -18,12 +18,16 @@ const Select = (props: ISelectProps) => {
         <select
           name={name}
           id={id}
-          className="border-none outline-none bg-transparent"
+          className="border-none outline-none bg-transparent "
           {...rest}
         >
           {options.map((option, index) => {
             return (
-              <option key={index} value={option.value}>
+              <option
+                key={index}
+                value={option.value}
+                className="bg-skin-fill text-skin-base  "
+              >
                 {option.text}
               </option>
             );

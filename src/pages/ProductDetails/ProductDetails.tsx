@@ -62,25 +62,25 @@ const ProductDetails = () => {
           />
         </div>
         <div className="">
-          <h3 className="font-bold text-lg text-gray-600 mb-2">
+          <h3 className="font-bold text-lg text-skin-base mb-2">
             {product.title}
           </h3>
-          <p className="font-medium text-gray-900 mb-2">
+          <p className="font-medium text-skin-muted mb-2">
             {product.description}
           </p>
-          <p className="font-bold text-lg text-gray-900 mb-2">
+          <p className="font-bold text-lg text-skin-dark mb-2">
             $ {product.price}
           </p>
           <div className="flex gap-2 mb-2">{renderRate()}</div>
-          <span className="block text-gray-400 mb-2">
+          <span className="block text-skin-muted mb-2">
             {product?.rating?.count} reviews
           </span>
-          <span className="block uppercase text-red-500 mb-2">
+          <span className="block uppercase text-skin-colored mb-2">
             {product.category}
           </span>
           <Link to={"/"}>
-            <Button type="button" className="mt-6 mx-auto">
-              <span className=" text-gray-600 font-medium">Go Back Home</span>
+            <Button type="button" variant="outlined" className="mt-6 mx-auto">
+              <span className="">Go Back Home</span>
             </Button>
           </Link>
         </div>

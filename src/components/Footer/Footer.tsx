@@ -1,14 +1,14 @@
 const Footer = () => {
   return (
     <>
-      <footer className="bg-white">
+      <footer className="">
         <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
             <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
               <li>
                 <a
                   href="#"
-                  className="text-gray-500 transition hover:opacity-75"
+                  className="text-skin-base transition hover:opacity-75"
                 >
                   Terms & Conditions
                 </a>
@@ -17,7 +17,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-500 transition hover:opacity-75"
+                  className="text-skin-base transition hover:opacity-75"
                 >
                   Privacy Policy
                 </a>
@@ -26,7 +26,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-500 transition hover:opacity-75"
+                  className="text-skin-base transition hover:opacity-75"
                 >
                   Cookies
                 </a>
@@ -39,7 +39,7 @@ const Footer = () => {
                   href="https://www.facebook.com/elevatecheg"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-skin-base transition hover:opacity-75"
                 >
                   <span className="sr-only">Facebook</span>
 
@@ -63,7 +63,7 @@ const Footer = () => {
                   href="https://www.instagram.com/elevatecheg/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-skin-base transition hover:opacity-75"
                 >
                   <span className="sr-only">Instagram</span>
 
@@ -87,7 +87,7 @@ const Footer = () => {
                   href="https://github.com/AhmadAlabed"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-skin-base transition hover:opacity-75"
                 >
                   <span className="sr-only">GitHub</span>
 

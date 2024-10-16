@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-text-base: #374151; /*Gray 700 */
+    --color-text-dark: #111827; /*Gray 900 */
+    --color-text-muted: #9ca3af; /*Gray 400 */
+    --color-text-colored: #ef4444; /*red 500 */
+    --color-border: #d1d5db; /*Gray 300 */
+    --color-fill: #fff; /*Gray 50 */
+    --color-colored: #f3f4f6; /*Gray 100 */
+  }
+  .dark {
+    --color-text-base: #f9fafb; /*Gray 50 */
+    --color-text-dark: #cbd5e1; /*Gray 300 */
+    --color-text-muted: #f1f5f9; /*Gray 100 */
+    --color-text-colored: #dc2626; /*red 600 */
+    --color-border: #d1d5db; /*Gray 300 */
+    --color-fill: #111827; /*Gray 900 */
+    --color-colored: #374151; /*Gray 700 */
+  }
+}
+
 .no-scrollbar {
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For legacy Internet Explorer/Edge */
