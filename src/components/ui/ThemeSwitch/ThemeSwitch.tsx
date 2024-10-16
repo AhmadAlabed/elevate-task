@@ -6,7 +6,7 @@ const ThemeSwitch = () => {
   return (
     <button
       onClick={changeMode}
-      className="flex px-2  justify-center items-center bg-gray-200 hover:opacity-80 text-sm font-medium"
+      className="flex h-fill px-2  justify-center items-center bg-gray-200 hover:opacity-80 text-sm font-medium"
     >
       <img className=" w-6" src={mode === "light" ? dark : light} alt="" />
     </button>
